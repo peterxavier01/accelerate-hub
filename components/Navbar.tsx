@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { BadgePlus, LogOut } from "lucide-react";
 
@@ -13,7 +12,10 @@ const Navbar = async () => {
     <header className="px-5 py-3 bg-white shadow-sm font-works-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
-          <Image src="/logo.png" alt="logo" width={144} height={30} />
+          <p className="font-extrabold text-3xl">
+            Accelerate
+            <span className="text-primary">Hub</span>
+          </p>
         </Link>
 
         <div className="flex items-center gap-5 text-black">
